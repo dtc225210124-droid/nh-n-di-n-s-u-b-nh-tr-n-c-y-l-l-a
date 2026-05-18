@@ -1,31 +1,16 @@
-# Rice/Paddy Leaf Diease Detection using Deep Learning
+#Phát hiện bệnh trên lá lúa bằng phương pháp học sâu
+Ngành nông nghiệp đóng vai trò quan trọng trong sự phát triển kinh tế của bất kỳ quốc gia nào. Về nguyên liệu thô, đa số các quốc gia đều phụ thuộc vào hàng hóa nông nghiệp. Lúa là cây trồng được canh tác nhiều nhất trên toàn cầu. Lúa được trồng ở hơn 100 quốc gia trên thế giới. Tổng cộng 158 triệu ha được thu hoạch mỗi năm, cho năng suất hơn 700 triệu tấn gạo. So với các châu lục khác, châu Á sản xuất phần lớn lúa. Do dân số ngày càng tăng, ngành này đang ảnh hưởng đến môi trường về mặt nóng lên toàn cầu, biến đổi khí hậu nhanh chóng (Yadav et al., 2021). Ảnh lá lúa được chụp bằng máy ảnh kỹ thuật số hoặc thiết bị tương tự, và các hình ảnh này được sử dụng để phân loại vùng bị ảnh hưởng trên lá. Để phát hiện bệnh trên lá lúa, chúng tôi sử dụng mạng nơ-ron tích chập và mạng nơ-ron sâu trong khung đề xuất. Bài báo này đề xuất một khung sử dụng phần mềm mã nguồn mở, chi phí thấp để thực hiện nhiệm vụ phát hiện bệnh thực vật một cách đáng tin cậy.
 
+#Bài toán
+Phát hiện bệnh trên lá lúa bằng kỹ thuật xử lý ảnh và học sâu. ##Đặc điểm của dự án
 
-Agricultural sector plays a crucial role for economic development of any country. In terms 
-of raw materials, the majority of countries are dependent on agricultural goods. Paddy is mostly 
-cultivated crop around the globe. Paddy is cultivated in over 100 countries around the world. A 
-total of 158 million hectares are harvested each year, yielding more than 700 million tons of rice. 
-In comparison to other continents, Asia produces the majority of Paddy. Because of increasing 
-population it is affecting environment in terms of global warming, rapid climatic shifts Yadav et 
-al. (2021).
-Photos leaves from rice plants are taken with a digital camera or similar unit, and the images are 
-used to classify the affected region in the leaves. To detect disease in rice leaves, we use a 
-Convolution neural network and a Deep neural network in the proposed framework. This paper 
-proposes a framework that employs low cost, open- source software to achieve the task of reliably 
-detecting plant disease.
-
-## Problem Statement
-To detect the disease present in Rice leaf using Image Processing and Deep Learning techniques. 
-##Features of the project
-- Use of Deep learning algorithms.
-- The model used is CNN model.
-- The algorithm used is Supervised Learning Algorithm on backpropagation for training.
-- Use of Flask for Creating the Application programming interfaces i.e., APIs along with jinja2 templating.
-- Static Webpages are created for showing the result/prediction of the rice leaf disease with the use of frontend technologies like HTML, CSS and Bootstrap.
-- The model acuuracy is 90%.
-- The training and testing ration provided is 8:2 which may cause overfitting of the model.
-- However during the testing of dataset, we have provided the dataset of our own.
-
-## Our Contribution
-Created our own dataset. for this project we have implemented the datasets from the kaggle as well as our own dataset.
-Creation of web pages.
+Sử dụng các thuật toán học sâu.
+Mô hình được sử dụng là mô hình CNN.
+Thuật toán được sử dụng là thuật toán học có giám sát dựa trên lan truyền ngược để huấn luyện.
+Sử dụng Flask để tạo giao diện lập trình ứng dụng, tức là API, cùng với hệ thống mẫu Jinja2.
+Các trang web tĩnh được tạo ra để hiển thị kết quả/dự đoán về bệnh lá lúa bằng cách sử dụng các công nghệ giao diện người dùng như HTML, CSS và Bootstrap.
+Độ chính xác của mô hình là 90%.
+Tỷ lệ dữ liệu huấn luyện và kiểm thử là 8:2, điều này có thể dẫn đến hiện tượng quá khớp (overfitting) của mô hình.
+Tuy nhiên, trong quá trình thử nghiệm bộ dữ liệu, chúng tôi đã cung cấp bộ dữ liệu của riêng mình.
+#Đóng góp
+Tạo bộ dữ liệu riêng. Đối với dự án này, tôi đã sử dụng các bộ dữ liệu từ Kaggle cũng như bộ dữ liệu riêng của mình. Tạo các trang web.
