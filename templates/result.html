@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả dự đoán</title>
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <style>
+
+        body{
+            background-image: url("/static/result.png");
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        header{
+            background: linear-gradient(to right, #0f9b0f, #38ef7d);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 4px solid white;
+            box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+        }
+
+        marquee h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .main-container{
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .result-box{
+            background-color: rgba(255,255,255,0.95);
+            border-left: 8px solid green;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
+        .result-box h2{
+            color: #0b6623;
+            font-weight: bold;
+        }
+
+        .confidence{
+            margin-top: 10px;
+            font-size: 20px;
+            color: #d35400;
+            font-weight: bold;
+        }
+
+        .img{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .img img{
+            width: 700px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 4px solid green;
+            box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
+        }
+
+        .info-box{
+            background-color: rgba(255,255,255,0.95);
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+        }
+
+        .symptoms{
+            border-left: 8px solid #e74c3c;
+        }
+
+        .cause{
+            border-left: 8px solid #9b59b6;
+        }
+
+        .prevention{
+            border-left: 8px solid orange;
+        }
+
+        .treatment{
+            border-left: 8px solid green;
+            margin-bottom: 40px;
+        }
+
+        h3{
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <marquee>
+        <h1>RICE LEAF DISEASE DETECTION SYSTEM</h1>
+    </marquee>
+</header>
+
+<div class="main-container">
+
+    <!-- Kết quả -->
+    <div class="result-box">
+
+        <h2>{{ disease }}</h2>
+
+        <div class="confidence">
+            Độ chính xác dự đoán: {{ confidence }}%
+        </div>
+
+    </div>
+
+    <!-- Hình ảnh -->
+    <div class="img">
+        <img src="/static/h.jpg" alt="Rice Leaf Image">
+    </div>
+
+    <!-- Triệu chứng -->
+    <div class="info-box symptoms">
+
+        <h3>Triệu chứng</h3>
+
+        <p>{{ symptoms }}</p>
+
+    </div>
+
+    <!-- Nguyên nhân -->
+    <div class="info-box cause">
+
+        <h3>Tác nhân gây bệnh</h3>
+
+        <p>{{ cause }}</p>
+
+    </div>
+
+    <!-- Phòng ngừa -->
+    <div class="info-box prevention">
+
+        <h3>Biện pháp phòng ngừa</h3>
+
+        <p>{{ prevention }}</p>
+
+    </div>
+
+    <!-- Điều trị -->
+    <div class="info-box treatment">
+
+        <h3>Biện pháp điều trị</h3>
+
+        <p>{{ treatment }}</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
